@@ -2,13 +2,16 @@
 
 1.
 
+```
 letter ::= [A-Z] | [a-z] | _
 digit ::= [0-9]
 
 c_ident ::= letter (letter | digit)*
+```
 
 2.
 
+```
 digit ::= [0-9]
 fdigit ::= [2-9]
 
@@ -18,9 +21,11 @@ central ::= tdigit
 subscriber ::= digit digit digit digit
 
 number ::= area '.' central '.' subscriber | area - central - subscriber
+```
 
 3.
 
+```
 tdigit ::= [0-3]
 odigit ::= [0-7]
 octal ::= (odigit)? odigit | tdigit odigit odigit
@@ -41,6 +46,7 @@ unicode ::= u (nzhdigit hdigit hdigit hdigit |
 escape ::= \ (b | t | n | f | r | ''' | " | \ | octal | unicode)
 
 string ::= "([^", \, '\n', '\r'] | escape)*"
+```
 
 ## Problem 2: Context-Free Grammars
 
@@ -50,6 +56,8 @@ A. The grammar describes all words over alphabet {a,b} that contain
 more occurrences of b than a.
 
 B.
+
+```
                   S
                  / \
                 M   B
@@ -65,10 +73,11 @@ B.
                    a   C
                        |
                        epsilon
-
+```
 
 ### Part 2
 
+```
            E
           /|\_
          / O  \
@@ -85,3 +94,4 @@ B.
                      2 **  N
                            |
                            2
+```
