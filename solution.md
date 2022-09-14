@@ -96,7 +96,7 @@ If follows from the above property that if `w` is a word obtained by concatenati
 
 B.
 
-The grammar is ambiguous. So there is more than one possible derivation and parse tree. Here is one possibility (with epsilon leaves omitted):
+The grammar is ambiguous. So there is more than one possible derivation and parse tree. The solutions differ in how the word is split into subwords that have exactly one more `b` than `a`. Here is a parse tree based on the split `bba b` (with epsilon leaves omitted):
 ```
                   S
                  / \
@@ -112,6 +112,8 @@ The grammar is ambiguous. So there is more than one possible derivation and pars
                     / \
                    a   C
 ```
+
+There exists an alternative parse tree based on the split `b bab`.
 
 ### Part 2
 
