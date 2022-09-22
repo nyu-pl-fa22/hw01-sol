@@ -61,7 +61,7 @@ octalp ::= (odigit)? odigit non-odigit | tdigit odigit odigit
 
 escapep ::= b | t | n | f | r | ''' | " | \ | octalp | unicode
 
-string ::= "(non-escape | \ (escape \)* escapep)* (non-escape | \ escape)*"
+string ::= "(non-escape | \ (escape \)* escapep)* (\ escape)*"
 ```
 
 ## Problem 2: Context-Free Grammars
